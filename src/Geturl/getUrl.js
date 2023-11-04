@@ -14,13 +14,13 @@ async function submit(e){
 let x=''
 
 try{
-  x=await axios.post('http://localhost:3000/url/shorten',{
+  x=await axios.post('https://shard-married-brow.glitch.me/url/shorten',{
   longUrl
 },
 
 )
 
-window.alert(`shorturl: http://localhost:5000/${x.data.urlCode}` )
+window.alert(`shorturl: https://shard-married-brow.glitch.me/${x.data.urlCode}` )
 window.location.reload(false);
 
 }
